@@ -1,0 +1,138 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="en-us">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>Desenvolvimento Web</title>
+        <meta name="description" content="">
+
+
+        <link rel="stylesheet" href="{% static 'css/production.css' %}">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+    </head>
+
+    <body class="has-animations">
+
+
+        <header class="pt2 pb1 align--center">
+
+            <div class="container">
+                <p>Aprenda um pouco sobre...</p>
+                <h1 title="Desenvolvimento Web"><img class="logo" src="{% static '/img/logo.png' %}" alt="Desenvolvimento web"></h1>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="container">
+
+
+                <section class="grid-row grid-row--center">
+
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-1 reveal-on-scroll is-revealing">
+                        <div class="relative">
+                            <img class="info-image relative z2" src="{% static '/img/html.png' %}" alt="html">
+                            <div class="pattern pattern--left-down absolute z1"></div>
+                        </div>
+                    </div>
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-2">
+                        <h3>HTML</h3>
+                        <p>HTML abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+                    </div>
+
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-4">
+                        <h3>CSS</h3>
+                        <p>Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web. O código CSS pode ser aplicado diretamente nas tags ou ficar contido dentro das tags style . Também é possível, em vez de colocar a formatação dentro do documento, criar um link para um arquivo CSS que contém os estilos</p>
+                    </div>
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-3 reveal-on-scroll is-revealing">
+                        <div class="relative">
+                            <img class="info-image relative z2" src="{% static '/img/css.png' %}" alt="css">
+                            <div class="pattern pattern--right-middle absolute z1"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-5 reveal-on-scroll is-revealing">
+                        <div class="relative">
+                            <img class="info-image relative z2" src="{% static '/img/js.png' %}" alt="JavaScript">
+                            <div class="pattern pattern--left-up absolute z1"></div>
+                        </div>
+                    </div>
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-6">
+                        <h3>Java Script</h3>
+                        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.</p>
+                    </div>
+
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-8">
+                        <h3>Framework FrontEnd</h3>
+                        <p>Framework é um facilitador, ele traz diversas soluções já pré-definidas, os frameworks do tipo front-end ajudam a programar a parte visível de um site ou aplicativo. </p>
+                    </div>
+
+                    <div class="grid-column span-half pt3 pb3 mobile-m order-8">
+                        <h3>Framework BackEnd</h3>
+                        <p>Estruturas de backend são essenciais para o desenvolvimento, os frameworks back-end atuam mais nos bastidores do projeto, lidando com as requisições do usuário, servidores e linguagens.</p>
+                    </div>
+                </section>
+            </div>
+
+            <section class="bg--secondary-color pt3 pb3">
+                <div class="container">
+
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="pt2 pb2">
+
+            <div class="container align--center">
+                <p>Contato</p>
+                    <form>
+
+                         <input TYPE="button" class="btn btn-info" VALUE="Envie um Email" onclick="window.location.href='contato'">
+
+
+                <ul class="no-bullets list--inline mt1">
+                    <li class="mr1"><a href="https://github.com/ZeliaNFT" class="link"><img class="icon" src="{% static '/img/git.png' %}" alt="GitHub"></a></li>
+                    <li><a href="https://www.linkedin.com/in/zeliatorres/" class="link"><img class="icon" src="{% static '/img/linkedin.png' %}" alt="LinkedIn"></a></li>
+                </ul>
+                <p>&copy; Zelia Torres</p>
+            </div>
+        </footer>
+
+
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+        <script src="{% static 'js/production.js' %}"></script>
+     <!--   <table>
+            <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preco</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for produto in produtos %}
+                <tr>
+                   <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a></td>
+                    <td>{{ produto.preco }}</td>
+                </tr>
+            {% endfor%}
+            </tbody>
+        </table>-->
+
+    </body>
+
+</html>
+
